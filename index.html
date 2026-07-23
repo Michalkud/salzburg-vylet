@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salcburk &amp; Solná komora — plán na 5 dní pro 2 osoby</title>
+<style>
+  :root{
+    --ink:#1c2430; --muted:#5b6879; --line:#e2e8f0; --bg:#f6f8fb;
+    --card:#ffffff; --accent:#1f6f5c; --accent2:#2b6cb0; --gold:#b7791f;
+    --lake:#e6f2f1;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.55;}
+  .wrap{max-width:920px;margin:0 auto;padding:28px 20px 64px;}
+  header.hero{position:relative;border-radius:18px;overflow:hidden;box-shadow:0 8px 26px rgba(31,111,92,.18);}
+  header.hero .heroimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}
+  header.hero .herotint{position:relative;z-index:1;
+    background:linear-gradient(135deg,rgba(31,111,92,.82) 0%,rgba(43,108,176,.82) 100%);color:#fff;padding:30px 30px 26px;}
+  header.hero h1{margin:0 0 6px;font-size:27px;letter-spacing:-.3px;text-shadow:0 1px 4px rgba(0,0,0,.25);}
+  header.hero p{margin:2px 0;opacity:.97;font-size:15px;}
+  .pills{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px;}
+  .pill{background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.35);border-radius:999px;
+    padding:5px 12px;font-size:13px;font-weight:600;}
+  h2{font-size:19px;margin:34px 0 12px;padding-bottom:7px;border-bottom:2px solid var(--line);
+    display:flex;align-items:center;gap:9px;}
+  h2 .ic{font-size:20px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:12px 0;
+    box-shadow:0 1px 3px rgba(20,30,50,.04);}
+  .day{display:flex;gap:16px;align-items:flex-start;}
+  .day .tag{flex:0 0 auto;background:var(--lake);color:var(--accent);border-radius:10px;
+    padding:8px 12px;text-align:center;min-width:96px;font-weight:700;font-size:13px;line-height:1.3;}
+  .day .tag small{display:block;font-weight:600;color:var(--muted);font-size:11px;margin-top:2px;}
+  .day .body{flex:1;min-width:0;}
+  .day .body h3{margin:2px 0 6px;font-size:16px;}
+  .day ul{margin:6px 0 0;padding-left:18px;}
+  .day li{margin:3px 0;}
+  .photo{width:100%;height:200px;border-radius:10px;margin:2px 0 10px;
+    background:linear-gradient(135deg,#cfe0dc,#bcd2e6);overflow:hidden;position:relative;}
+  .photo img{width:100%;height:100%;object-fit:cover;display:block;}
+  .photo figcaption{position:absolute;right:8px;bottom:6px;background:rgba(0,0,0,.45);color:#fff;
+    font-size:10.5px;padding:2px 7px;border-radius:6px;}
+  .photo.sm{height:150px;}
+  .twoimg{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  table{width:100%;border-collapse:collapse;font-size:14px;margin-top:4px;}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top;}
+  th{background:#f0f4f8;font-size:12px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);}
+  td.price{font-weight:700;white-space:nowrap;color:var(--accent);}
+  .rec{border-left:4px solid var(--accent);}
+  .badge{display:inline-block;background:var(--accent);color:#fff;font-size:11px;font-weight:700;
+    padding:2px 8px;border-radius:6px;margin-left:6px;vertical-align:middle;}
+  .badge.alt{background:var(--muted);}
+  .badge.gold{background:var(--gold);}
+  a{color:var(--accent2);text-decoration:none;font-weight:600;}
+  a:hover{text-decoration:underline;}
+  .btn{display:inline-block;background:var(--accent2);color:#fff !important;padding:5px 11px;border-radius:7px;
+    font-size:12.5px;font-weight:700;margin-top:4px;}
+  .btn:hover{text-decoration:none;background:#245a94;}
+  .note{font-size:13px;color:var(--muted);margin-top:6px;}
+  .total{background:var(--lake);border:1px solid #cfe6e2;border-radius:12px;padding:16px 20px;margin-top:14px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;}
+  .total .big{font-size:24px;font-weight:800;color:var(--accent);}
+  .tip{background:#fff9ec;border:1px solid #f1e0b8;border-radius:10px;padding:12px 14px;font-size:13.5px;margin-top:10px;}
+  .tip b{color:var(--gold);}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  @media(max-width:640px){.two{grid-template-columns:1fr;}.day{flex-direction:column;gap:8px;}.day .tag{min-width:0;}}
+  footer{margin-top:36px;font-size:12px;color:var(--muted);text-align:center;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <img class="heroimg" src="https://commons.wikimedia.org/wiki/Special:FilePath/La_fortezza_vista_dal_castello_di_Mirabell.JPG?width=1100" alt="Salcburk">
+  <div class="herotint">
+    <h1>Salcburk &amp; Solná komora — 5denní výlet</h1>
+    <p>Pro 2 (ty + máma) · čt 13. 8. → po 17. 8. 2026 · vlakem z Prahy</p>
+    <p>2 dny na cestu + 3 plné dny na místě · dvě základny: Salcburk + Wolfgangsee</p>
+    <div class="pills">
+      <span class="pill">🚆 Bez auta</span>
+      <span class="pill">💶 ~23 000 Kč základ, 2 os.</span>
+      <span class="pill">🏨 4 noci · twin postele</span>
+      <span class="pill">🏔️ Levně, ale pohodlně</span>
+    </div>
+  </div>
+</header>
+
+<p class="note" style="margin-top:16px">Chceš raději začít v <b>pá 14. 8.</b>? Nech vše stejné — jen posuň každý den o jeden dopředu (návrat út 18. 8.). Ceny i vlaky jezdí oba týdny stejně.</p>
+
+<!-- ITINERÁŘ -->
+<h2><span class="ic">🗺️</span> Plán den po dni</h2>
+
+<div class="card day">
+  <div class="tag">DEN 1<small>čt 13. 8. · cesta</small></div>
+  <div class="body">
+    <figure class="photo sm">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/La_fortezza_vista_dal_castello_di_Mirabell.JPG?width=900" alt="Salcburk" onerror="this.style.display='none'">
+      <figcaption>Salcburk · foto Wikimedia Commons</figcaption>
+    </figure>
+    <h3>Praha → Salcburk</h3>
+    <ul>
+      <li>Dopolední vlak z Praha hl.n. <b>~10:21</b> → Salzburg Hbf <b>~15:49</b> (jeden snadný přestup v Linci).</li>
+      <li>Ubytování v <b>salcburském hotelu</b> (5–10 min od nádraží / starého města).</li>
+      <li>Klidný večer: procházka Getreidegasse, Mozartplatz a nábřeží; večeře ve starém městě.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card day">
+  <div class="tag">DEN 2<small>pá 14. 8. · Salcburk</small></div>
+  <div class="body">
+    <div class="twoimg">
+      <figure class="photo sm">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Salzburg_-_Festung_Hohensalzburg.JPG?width=700" alt="Pevnost Hohensalzburg" onerror="this.style.display='none'">
+        <figcaption>Pevnost Hohensalzburg</figcaption>
+      </figure>
+      <figure class="photo sm">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/1806_-_Salzburg_-_Schloss_Mirabell.JPG?width=700" alt="Zámek a zahrady Mirabell" onerror="this.style.display='none'">
+        <figcaption>Mirabellské zahrady</figcaption>
+      </figure>
+    </div>
+    <h3>Salcburk, celý den</h3>
+    <ul>
+      <li><b>Pevnost Hohensalzburg</b> — lanovkou nahoru za nejlepším výhledem na město i hory.</li>
+      <li>Katedrála, DomQuartier, Residenzplatz; <b>Mozartův rodný dům</b> na Getreidegasse.</li>
+      <li><b>Mirabellské zahrady</b> (schody ze <i>Za zvuků hudby</i>) — zdarma, nejhezčí k podvečeru.</li>
+      <li>Volitelně káva a dort v Café Tomaselli nebo pivo v Augustiner Bräustübl (levné, místní).</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card day">
+  <div class="tag">DEN 3<small>so 15. 8. · k jezeru</small></div>
+  <div class="body">
+    <figure class="photo">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sankt_Gilgen_und_Wolfgangsee.JPG?width=1000" alt="St. Gilgen a Wolfgangsee" onerror="this.style.display='none'">
+      <figcaption>St. Gilgen na Wolfgangsee</figcaption>
+    </figure>
+    <h3>Salcburk → k jezeru</h3>
+    <ul>
+      <li>Přesun podle zvolené základny (kvůli twin postelím, viz hotely níže):<br>
+      • <b>Wolfgangsee / St. Gilgen</b> — <b>Postbus 150</b> ze Salzburg Hbf (~50 min, přímo);<br>
+      • <b>Hallstattské jezero / Obertraun</b> — vlak přes Attnang-Puchheim (~2,5 h), twin u vody jistější.</li>
+      <li>Ubytování u jezera, odložit zavazadla.</li>
+      <li>Odpoledne v klidu: promenáda kolem jezera a kavárna u vody; na Wolfgangsee lanovka <b>Zwölferhorn</b>, u Hallstattu procházka k jezeru.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card day">
+  <div class="tag">DEN 4<small>ne 16. 8. · velký den u jezera</small></div>
+  <div class="body">
+    <div class="twoimg">
+      <figure class="photo sm">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wolfgangsee_vom_Plombergstein_St_Gilgen.jpg?width=700" alt="Wolfgangsee" onerror="this.style.display='none'">
+        <figcaption>Wolfgangsee &amp; Schafberg</figcaption>
+      </figure>
+      <figure class="photo sm">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/1_hallstatt_austria.jpg?width=700" alt="Hallstatt" onerror="this.style.display='none'">
+        <figcaption>Hallstatt (alternativa)</figcaption>
+      </figure>
+    </div>
+    <h3>Wolfgangsee a hora — vyber si</h3>
+    <ul>
+      <li><span class="badge">SNADNÉ + KRÁSNÉ</span> Lodí přes jezero do <b>St. Wolfgang</b>, historickou ozubnicovou dráhou <b>Schafbergbahn</b> na vrchol 1 783 m, zpět lodí. Pohodový, dechberoucí den.</li>
+      <li><span class="badge alt">IKONA</span> Výlet do <b>Hallstattu</b>: bus 150 → Bad Ischl, vlak → Hallstatt + přívoz přes jezero. ~2 h každým směrem, takže brzy ráno — ale je to ta pohlednicová vesnička.</li>
+    </ul>
+    <div class="tip"><b>Moje volba:</b> Wolfgangsee + Schafberg — žádné dlouhé přejezdy, vše máte za dveřmi a s mámou je to upřímně příjemnější. Hallstatt jen když ho musíš mít odškrtnutý.</div>
+  </div>
+</div>
+
+<div class="card day">
+  <div class="tag">DEN 5<small>po 17. 8. · cesta</small></div>
+  <div class="body">
+    <h3>Od jezera → Praha</h3>
+    <ul>
+      <li>Klidné ráno u jezera, pak zpět do Salcburku (Postbus 150 z St. Gilgen ~50 min, nebo vlak z Obertraunu/Hallstattu ~2,5 h — podle základny).</li>
+      <li>Vlak Salcburk <b>~10:07</b> → Praha ~15:35 (doma dřív), <b>nebo ~14:07</b> → ~19:35 (líné poslední ráno). Od Hallstattu počítej s dřívějším odjezdem.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- JÍZDENKY -->
+<h2><span class="ic">🎫</span> Jaké jízdenky koupit + kde</h2>
+
+<div class="card">
+  <table>
+    <tr><th>Jízdenka</th><th>Detaily &amp; kde koupit</th><th>Cena (2 os.)</th></tr>
+    <tr class="rec">
+      <td><b>Vlak Praha ⇄ Salcburk</b><span class="badge">KUP HNED</span></td>
+      <td>ÖBB/ČD EuroCity + Railjet, 1 přestup v Linci, ~5 h 30 každým směrem. Kup levné předprodejní jízdné (<b>Sparschiene ~600 Kč/os. každým směrem</b>) — je nejlevnější a rychle mizí.<br>
+      <a class="btn" href="https://www.oebb.at/en/" target="_blank" rel="noopener">Koupit na ÖBB</a>
+      <a class="btn" href="https://www.cd.cz/en/" target="_blank" rel="noopener">Koupit na ČD</a></td>
+      <td class="price">~2 400–2 750 Kč<br>zpáteční</td>
+    </tr>
+    <tr>
+      <td>Postbus 150 (místní)</td>
+      <td>Salcburk ⇄ St. Gilgen, ~200–225 Kč/os. každým směrem. U řidiče nebo v aplikaci ÖBB. Použiješ dvakrát (tam v den 3, zpět v den 5).<br>
+      <a class="btn" href="https://www.oebb.at/en/" target="_blank" rel="noopener">Spojení ÖBB</a></td>
+      <td class="price">~850 Kč</td>
+    </tr>
+    <tr>
+      <td>Loď po Wolfgangsee</td>
+      <td>St. Gilgen ⇄ St. Wolfgang, kup na palubě u kapitána (~225–375 Kč/os. podle úseku; je i celodenní jízdenka).<br>
+      <a class="btn" href="https://www.5schaetze.at/en/wolfgangseeschifffahrt.html" target="_blank" rel="noopener">Jízdní řády &amp; ceny</a></td>
+      <td class="price">~750–1 100 Kč</td>
+    </tr>
+    <tr>
+      <td>Ozubnicová dráha Schafbergbahn<span class="badge gold">EXTRA</span></td>
+      <td>Zpáteční na vrchol, ~1 525 Kč/os. Jezdí denně 25. 4.–1. 11. 2026. Na srpen si <b>rezervuj čas online</b> — je oblíbená. Nebo vynech a dej si lanovku Zwölferhorn v St. Gilgen (~750 Kč).<br>
+      <a class="btn" href="https://www.5schaetze.at/en/schafbergbahn.html" target="_blank" rel="noopener">Rezervovat Schafbergbahn</a></td>
+      <td class="price">~3 050 Kč<br><span class="note">volitelné</span></td>
+    </tr>
+  </table>
+  <div class="tip"><b>Alternativní vlak:</b> Pokud bude EuroCity vyprodaný, <b>RegioJet</b> přes Vídeň je ~1 000 Kč/os., pohodlnější sedačky, ale ~7 h 20 — delší den. Dobrá záloha. <a href="https://regiojet.com/" target="_blank" rel="noopener">regiojet.com</a></div>
+</div>
+
+<!-- HOTELY -->
+<h2><span class="ic">🏨</span> Které hotely rezervovat + odkazy</h2>
+
+<p class="note">Všechny hotely níže mají <b>twin — dvě oddělené postele</b> (Zweibettzimmer), ověřeno živě na Booking.com pro tvoje datum. Ceny jsou za pokoj (2 os.), <b>celkem za 2 noci</b>, se zrušením zdarma tam, kde to jde. Tip: na Booking zaškrtni filtr <i>„Preferovaný typ postelí → Dvě oddělené postele"</i>.</p>
+
+<div class="two">
+  <div class="card rec">
+    <h3 style="margin:0 0 4px">Salcburk · 2 noci (13.–15. 8.)</h3>
+    <p class="note" style="margin-top:0">Nejlevnější slušný twin, řazeno podle ceny:</p>
+    <table>
+      <tr><td><b>Kolpinghaus SommerHostel</b><span class="badge">NEJLEVNĚJŠÍ</span><br><span class="note">2 oddělené postele, snídaně v ceně, 8,0, 2,4 km, zrušení zdarma.</span><br><a class="btn" href="https://www.booking.com/searchresults.html?ss=Kolpinghaus+Salzburg&checkin=2026-08-13&checkout=2026-08-15&group_adults=2&no_rooms=1&nflt=bed_preference%3D2&order=price" target="_blank" rel="noopener">Rezervovat twin</a></td><td class="price">~7 700 Kč</td></tr>
+      <tr><td><b>Pension Elisabeth</b><span class="badge gold">HODNOCENÍ 8,6</span><br><span class="note">Oddělené postele, 1,6 km od centra — nejlepší poměr cena/hodnocení.</span><br><a class="btn" href="https://www.booking.com/searchresults.html?ss=Pension+Elisabeth+Salzburg&checkin=2026-08-13&checkout=2026-08-15&group_adults=2&no_rooms=1&nflt=bed_preference%3D2&order=price" target="_blank" rel="noopener">Rezervovat twin</a></td><td class="price">~8 330 Kč</td></tr>
+      <tr><td>Four Points by Sheraton (Messe)<br><span class="note">2 oddělené postele + balkon, 8,4 (hotelový standard, 4,3 km).</span><br><a class="btn" href="https://www.booking.com/searchresults.html?ss=Four+Points+Sheraton+Salzburg+Messe&checkin=2026-08-13&checkout=2026-08-15&group_adults=2&no_rooms=1&nflt=bed_preference%3D2&order=price" target="_blank" rel="noopener">Rezervovat twin</a></td><td class="price">~8 880 Kč</td></tr>
+    </table>
+  </div>
+  <div class="card rec">
+    <h3 style="margin:0 0 4px">Jezero · 2 noci (15.–17. 8.)</h3>
+    <p class="note" style="margin-top:0">Twin u vody — u Hallstattského jezera (na Wolfgangsee je twin skoro vyprodaný):</p>
+    <table>
+      <tr><td><b>Seehotel am Hallstättersee</b><span class="badge">TWIN U VODY</span><br><span class="note">2 oddělené postele, přímo u jezera (Obertraun), 8,8, snídaně, zrušení zdarma. Hallstatt hned vedle.</span><br><a class="btn" href="https://www.booking.com/searchresults.html?ss=Seehotel+am+Hallstättersee+Obertraun&checkin=2026-08-15&checkout=2026-08-17&group_adults=2&no_rooms=1&nflt=bed_preference%3D2" target="_blank" rel="noopener">Rezervovat twin</a></td><td class="price">~9 970 Kč</td></tr>
+      <tr><td><b>Heritage Hotel Hallstatt</b><span class="badge gold">V HALLSTATTU</span><br><span class="note">2 oddělené postele, přímo v historickém Hallstattu, 8,7, snídaně.</span><br><a class="btn" href="https://www.booking.com/searchresults.html?ss=Heritage+Hotel+Hallstatt&checkin=2026-08-15&checkout=2026-08-17&group_adults=2&no_rooms=1&nflt=bed_preference%3D2" target="_blank" rel="noopener">Rezervovat twin</a></td><td class="price">~12 680 Kč</td></tr>
+    </table>
+    <p class="note">Chceš zůstat na <b>Wolfgangsee</b>? Twin je tam na tvé datum skoro vyprodaný — rezervuj hned a do poznámky napiš <i>„Bitte Zweibettzimmer"</i> (zkus Hotel Stroblerhof ve Stroblu).</p>
+  </div>
+</div>
+<div class="tip"><b>Doporučená twin kombinace levně-ale-pohodlně:</b> Pension Elisabeth (Salcburk) + Seehotel am Hallstättersee (u Hallstattu). Oba mají oddělené postele, dobré hodnocení, celkem <b>~18 000 Kč za všechny 4 noci</b> (nejúspornější varianta s Kolpinghausem ~17 500 Kč). Mid-srpen je špička, takže tohle je zhruba reálné dno za twin.</div>
+
+<!-- ROZPOČET -->
+<h2><span class="ic">💶</span> Kolik to dá dohromady</h2>
+<div class="card">
+  <table>
+    <tr><th>Položka</th><th>Odhad (2 osoby)</th></tr>
+    <tr><td>Vlak Praha ⇄ Salcburk (předprodej)</td><td class="price">~2 500 Kč</td></tr>
+    <tr><td>Místní busy + lodě (Postbus 150, Wolfgangsee)</td><td class="price">~1 750 Kč</td></tr>
+    <tr><td>Hotely — 4 noci, twin (Pension Elisabeth + Seehotel am Hallstättersee)</td><td class="price">~18 000 Kč</td></tr>
+    <tr><td>Vstupy (pevnost, Mozart, lanovka)</td><td class="price">~1 500 Kč</td></tr>
+    <tr><td>Schafbergbahn <span class="note">(volitelné)</span></td><td class="price">~3 050 Kč</td></tr>
+  </table>
+  <div class="total">
+    <div>Základní výlet (doprava + hotely + základní vstupy)<br><span class="note">bez jídla a volitelného Schafbergu</span></div>
+    <div class="big">≈ 23 000 Kč</div>
+  </div>
+  <p class="note">Na jídlo počítej zhruba <b>1 000–1 500 Kč denně pro oba</b>, když zkombinuješ jednu pěknou večeři s pečivem k snídani a piknikem u jezera. To přidá ~5 000–7 500 Kč za celý výlet.</p>
+</div>
+
+<footer>
+  Ceny v CZK přepočteny kurzem ~25 Kč/€, srpen 2026 · při rezervaci si ověř aktuální jízdné a ceny hotelů. Fotky: Wikimedia Commons.<br>
+  Pro tebe + mámu · flexibilní — napiš, jestli chceš základnu spíš v Bad Ischl, přidat noc v Hallstattu, nebo být jen v Salcburku.
+</footer>
+
+</div>
+</body>
+</html>
